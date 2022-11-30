@@ -5,6 +5,7 @@ import { Author, Comments, CommentsForm, PostCard, Widget } from '../components'
 import {getPosts} from '../services';
 import{FeaturedPosts} from '../sections'
 // @ts-nocheck
+
 export default function Home({posts}) {
   console.log(posts)
   return (
