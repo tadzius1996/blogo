@@ -6,12 +6,12 @@ import { Author, PostCard, Widget} from '../../components';
 
 const CategoryPost = ({ posts }) => {
   const router = useRouter();
-
+ console.log(posts)
   return (
     <div className=" mx-auto px-10 mb-8 mt-20">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="col-span-1 lg:col-span-11">
-          {posts.map((post, index) => (
+          {posts?.map((post, index) => (
             <PostCard key={index} post={post.node} />
           ))}
         </div>
